@@ -1,3 +1,4 @@
+//list data structure functions
 public class List
 {
       Node head;
@@ -10,6 +11,7 @@ public class List
 				this.data=data;
 			}
 	  }
+	 //function to add a new node at the end of the linked list
 	  public void append(int data)
 	  {
 	       Node new_node=new Node(data);
@@ -24,6 +26,7 @@ public class List
 			   head=new_node;
 		   }
 	  }
+	//function to find the nth element from the end
 	  public void nth(int n)
 	  {
 			Node f=head;
@@ -40,6 +43,7 @@ public class List
 		    }
 			System.out.println(s.data);
 	  }
+	//function to print the linked list
 	  public void print()
 	  {
 	       Node p=head;
@@ -49,6 +53,7 @@ public class List
 			   p=p.next;
 		   }
 	  }
+	//function to put all even elements before the odd elements
 	  public void even_odd()
 	  {
 			Node end=head;
@@ -86,6 +91,7 @@ public class List
                 }				
 			}
 	  }
+	//function to reverse the linked list
 	  public void reverse()
 	  {
 			Node prev=null;
